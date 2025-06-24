@@ -4,6 +4,7 @@ import ShowProductList from './ShowProductList';
 import LoginForm from './LoginForm';
 import NotFound404 from "./NotFound404";
 import ProductDetails from "./ProductDetails";
+import ProductFilter from "./ProductFilter";
 
 function Routs() {
   return createBrowserRouter([
@@ -27,13 +28,21 @@ function Routs() {
     },
     {
       path: "/product-details/:id",
-      element:
-        (
-          <>
-            <Base />
-            <ProductDetails />
-          </>
-      )
+      element: (
+        <>
+          <Base />
+          <ProductDetails />
+        </>
+      ),
+    },
+    {
+      path: "/filters",
+      element: (
+        <>
+          <Base />
+          <ProductFilter />
+        </>
+      ),
     },
     {
       path: "/*",
