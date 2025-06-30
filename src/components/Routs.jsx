@@ -5,6 +5,7 @@ import LoginForm from './LoginForm';
 import NotFound404 from "./NotFound404";
 import ProductDetails from "./ProductDetails";
 import ProductFilter from "./ProductFilter";
+import RegisterForm from "./RegisterForm";
 
 function Routs() {
   return createBrowserRouter([
@@ -23,6 +24,15 @@ function Routs() {
         <>
           <Base />
           <LoginForm />
+        </>
+      ),
+    },
+    {
+      path: "/register-form",
+      element: (
+        <>
+          <Base />
+          <RegisterForm />
         </>
       ),
     },

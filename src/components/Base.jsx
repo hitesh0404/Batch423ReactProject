@@ -33,6 +33,11 @@ function Base() {
                 </NavLink>
               </li>
               <li className="nav-item">
+                <NavLink className="nav-link" to="/register-form">
+                  Register 
+                </NavLink>
+              </li>
+              <li className="nav-item">
                 <NavLink className="nav-link" to="/filters">
                   ProductFilters
                 </NavLink>

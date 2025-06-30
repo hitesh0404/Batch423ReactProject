@@ -1,0 +1,11 @@
+#form{
+    display: flex;
+    background-color: aqua;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+#form button{
+    width: 100% ;
+}
